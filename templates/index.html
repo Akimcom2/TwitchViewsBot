@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  .button input[type="button"] {
+  color: #fff;
+  font-size: 18px;
+  background: #3e2093;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  transition: 0.2s; /* чтобы плавно менялся цвет при наведении (:hover) */
+}
+
+/* Меняем цвет фона при наведении на кнопку */
+.button input[type="button"]:hover {
+  background: rgb(0, 0, 207);
+}
+</style>
+<body>
+
+<form action="#" method="post" target="_blank">
+  <h2>Форма ввода данных в бот</h2>
+  <fieldset>
+    <legend>Данные трансляции</legend>
+    <ul>
+      <li>
+        <label for="stream_id">Трансляция:*</label>
+        <input type="text" name="stream_id" placeholder="Cсылка на трансляцию" id="stream_id" required>
+      </li>
+      <li>
+        <label for="threads">Количество пользователей:</label>
+        <input type="number" name="threads" placeholder="27" id="threads" min="0" max="1250">
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>Данные пользователя</legend>
+    <ul>
+      <li>
+        <label for="email1">E-mail:*</label>
+        <input type="email" name="mail" placeholder="ivanov@gmail.com" id="email1" required>
+      </li>
+      <li>
+        <label for="pass1">Пароль:*</label>
+        <input type="password" name="pass" placeholder="************" id="pass1" maxlength="30" required>
+      </li>
+    </ul>
+  </fieldset>
+    <fieldset>
+    <legend>Данные пользователя</legend>
+    <ul>
+      <li>
+        <label for="email2">E-mail:*</label>
+        <input type="email" name="mail" placeholder="ivanov@gmail.com" id="email2" required>
+      </li>
+      <li>
+        <label for="pass2">Пароль:*</label>
+        <input type="password" name="pass" placeholder="************" id="pass2" maxlength="30" required>
+      </li>
+    </ul>
+  </fieldset>
+    <fieldset>
+    <legend>Данные пользователя</legend>
+    <ul>
+      <li>
+        <label for="email3">E-mail:*</label>
+        <input type="email" name="mail" placeholder="ivanov@gmail.com" id="email3" required>
+      </li>
+      <li>
+        <label for="pass3">Пароль:*</label>
+        <input type="password" name="pass" placeholder="************" id="pass3" maxlength="30" required>
+      </li>
+    </ul>
+  </fieldset>
+    <fieldset>
+    <legend>Данные пользователя</legend>
+    <ul>
+      <li>
+        <label for="email4">E-mail:*</label>
+        <input type="email" name="mail" placeholder="ivanov@gmail.com" id="email4" required>
+      </li>
+      <li>
+        <label for="pass4">Пароль:*</label>
+        <input type="password" name="pass" placeholder="************" id="pass4" maxlength="30" required>
+      </li>
+    </ul>
+  </fieldset>
+  <div class="button">
+    <input type="button" value="Отправить" />
+  </div>
+</form>
+
+</body>
+</html>
